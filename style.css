@@ -289,10 +289,14 @@ a:hover {
 }
 .card-footer {
 	background: #6f6f6f10;
-	margin: -1rem -1rem;
+	margin: 0rem -1rem -1rem -1rem;
 	padding: 1rem;
 	border-top: 1px solid #6f6f6f25;
+	position: absolute !important;
+	bottom: 15px !important;
+	width: 100% !important;
 }
+
 .text-muted {
 	font-family: "Montserrat", sans-serif;
 	color: #6f6f6f !important;
@@ -305,7 +309,7 @@ a:hover {
 	font-weight: bold;
 	border-radius: 500px;
 	border: solid 2px #4ac918;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 	padding: 0.475rem 1.5rem;
 }
 .btn:hover {
