@@ -108,20 +108,17 @@ a:hover {
 	color: #5ee527;
 	transition: background 0.4s ease-in, color 0.4s, border-color 0.4s;
 }
-#about-me,
-#web-dev {
+#active {
 	border-color: green !important;
 	background: #6f6f6f30;
 	border-right-width: 0px !important;
 	color: #5ee527;
 	transition: background 0.4s ease-in, color 0.4s, border-color 0.4s;
 }
-#about-me .menu-icon {
+#active .menu-icon {
 	fill: #5ee527;
 }
-#web-dev .menu-icon {
-	fill: #5ee527;
-}
+
 .burger {
 	display: none;
 }
@@ -150,6 +147,7 @@ a:hover {
 	max-width: 1600px;
 	margin: 0 auto;
 	padding-left: 350px;
+	margin-bottom: 3rem;;
 }
 .page-content {
 	padding: 0px 20px;
@@ -274,7 +272,6 @@ a:hover {
 .card {
 	background-color: #212121 !important;
 	box-shadow: 5px 0px 10px #00100050;
-	border-radius: ;
 }
 .card-title {
 	color: #a4a4a4;
