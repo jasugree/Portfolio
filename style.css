@@ -1,3 +1,12 @@
+::selection {
+	background: #5ee52798;
+	color: #171717; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+	background: #5ee52798; /* Gecko Browsers */
+	color: #171717;
+}
+
 body {
 	background: #171717;
 	background-image: radial-gradient(#f6f6f620 1px, transparent 0);
@@ -12,10 +21,17 @@ a {
 a:hover {
 	color: inherit;
 }
-.resume_bullets li, .resume_bullets_skills li {
-    list-style-type: circle;
+.resume_bullets li,
+.resume_bullets_skills li {
+	list-style-type: circle;
 	font-family: "Alegreya", serif;
-    color: #a4a4a4 !important;
+	color: #a4a4a4 !important;
+}
+ul.resume_bullets {
+	margin-bottom: 1.5rem;
+}
+.resume-bottom {
+	margin-bottom: 10rem;
 }
 .site-branding {
 	padding-bottom: 50px;
@@ -152,7 +168,7 @@ a:hover {
 	max-width: 1600px;
 	margin: 0 auto;
 	padding-left: 350px;
-	margin-bottom: 3rem;;
+	margin-bottom: 3rem;
 }
 .page-content {
 	padding: 0px 20px;
@@ -245,6 +261,19 @@ a:hover {
 	.break {
 		padding-left: 0px;
 	}
+	.page-content {
+		padding: 0px 10px;
+	}
+	.top-resume {
+		display: block !important;
+	}
+	.title-button {
+		display: block !important;
+		width: 100%;
+	}
+	.title-button h2 {
+		padding-bottom: 0.5rem !important;
+	}
 }
 
 .nav-active {
@@ -327,9 +356,9 @@ h1.display-1 {
 	padding-bottom: 5px;
 	text-transform: uppercase;
 	font-size: 2.25rem;
-	line-height: 1.5rem;
+	line-height: 2.5rem;
 }
-h2{
+h2 {
 	color: #a4a4a4 !important;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 900 !important;
@@ -338,16 +367,62 @@ h2{
 	text-transform: uppercase;
 	font-size: 1.6rem;
 }
-h3{
+h3 {
 	font-size: 1rem;
-	color: #a4a4a4 !important;
+	color: #a4a4a4;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 900 !important;
 	letter-spacing: 1px !important;
 	padding-bottom: 5px;
-
+}
+.breadcrumb {
+	color: #4ac918;
+	font-family: "Montserrat", sans-serif;
+	opacity: 50%;
+}
+.breadcrumb:hover {
+	opacity: 100%;
+	transition: opacity 0.4s ease;
 }
 
+.breadcrumb-item.active {
+	color: #a4a4a4;
+}
+#resume-content {
+	max-width: 1300px;
+}
+p.resume_titles {
+	color: #a4a4a4;
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 0rem;
+}
+.resume-download-bottom {
+	text-align: center;
+	margin: auto;
+	display: block;
+}
+.resume-download-top {
+	margin-bottom: 0rem;
+}
+
+.top-resume {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	margin-bottom: 0.5rem;
+	padding-bottom: 5px;
+}
+.title-button {
+	display: flex;
+}
+.title-button h2 {
+	margin: 0px;
+	padding: 0px;
+}
+.second {
+	margin-left: auto;
+	align-items: flex-end;
+}
 .page-description {
 	font-family: "Alegreya", serif;
 	color: #a4a4a4 !important;
