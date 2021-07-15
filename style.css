@@ -589,6 +589,10 @@ p.resume_titles {
 	.about-text {
 		padding: 2rem 1rem;
 	}
+	p.resume_titles {
+		font-size: 1rem;	
+}
+
 }
 .good {
 	font-weight: bold;
