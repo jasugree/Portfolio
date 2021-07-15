@@ -425,8 +425,9 @@ p.resume_titles {
 }
 .page-description {
 	font-family: "Alegreya", serif;
-	color: #a4a4a4 !important;
+	color: #a4a4a4;
 	margin-left: 0px;
+	font-size: 1.3rem;
 }
 .green-break {
 	background: #4ac918;
@@ -503,31 +504,81 @@ p.resume_titles {
 	.copyright {
 		bottom: 120px;
 	}
+	.page-description {
+		font-size: 1rem;
+	}
 }
 /*ABOUT ME*/
 .about-me {
-	border-radius: 3000px;
-	box-shadow: 5px 0px 10px #000000;
+	padding: 0px;
+	margin: 0px;
 }
 .about-icon {
-	position: relative;
-	top: -110px;
-	left: 350px;
-	background: #212121;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background: #262626;
 	width: 100px;
 	height: 100px;
 	text-align: center;
 	padding-top: 32px;
 	font-size: 2.25rem;
-	border: solid 2px #4ac918;
+	border-top: solid 2px #4ac918;
+	border-right: solid 2px #4ac918;
 	transition: border 0.5s ease;
-	border-radius: 3000px;
-	box-shadow: 5px 0px 10px #000000;
 	transition: all 0.25s ease-in;
+	border-radius: 0rem 0.25rem 0rem 0rem;
 }
 .about-icon:hover {
 	background-color: #4ac918;
 	color: white;
 	transition: all 0.25s ease-in;
 	cursor: pointer;
+}
+.about-me-content {
+	padding-top: 0px;
+}
+
+.about-me-content .col-12 {
+	background: #212121;
+	box-shadow: 5px 0px 10px #00100050;
+	border-radius: 0.25rem;
+	display: flex;
+	padding: 0rem;
+	margin-bottom: 100px;
+}
+.about-text {
+	padding: 2rem;
+	padding-right: 4rem;
+}
+.about-img {
+	position: relative;
+	height: 100%;
+	background-image: url(./assets/aboutMe.jpg);
+	min-width: 500px;
+	background-size: cover;
+	background-position: center right;
+}
+.about-img img {
+	border-radius: 0rem 0.25rem 0.25rem 0rem;
+	height: 100%;
+}
+@media screen and (max-width: 1350px) {
+	.about-me-content .col-12 {
+		flex-direction: column-reverse;
+	}
+	.about-img {
+		position: relative;
+		height: 500px;
+		background-image: url(./assets/aboutMe.jpg);
+		min-width: 300px;
+		background-size: cover;
+		background-position: center;
+		max-height: 700px;
+	}
+}
+.good {
+	font-weight: bold;
+	text-decoration: underline;
+	text-decoration-color: #4ac918;
 }
