@@ -26,12 +26,13 @@ a:hover {
 	list-style-type: circle;
 	font-family: "Alegreya", serif;
 	color: #a4a4a4 !important;
+	font-size: 1.3rem;
 }
 ul.resume_bullets {
 	margin-bottom: 1.5rem;
 }
 .resume-bottom {
-	margin-bottom: 10rem;
+	margin-bottom: 5rem;
 }
 .site-branding {
 	padding-bottom: 50px;
@@ -274,6 +275,10 @@ ul.resume_bullets {
 	.title-button h2 {
 		padding-bottom: 0.5rem !important;
 	}
+	.resume_bullets li,
+.resume_bullets_skills li {
+	font-size: 1rem;
+}
 }
 
 .nav-active {
@@ -393,6 +398,7 @@ h3 {
 }
 p.resume_titles {
 	color: #a4a4a4;
+	font-size: 1.3rem;
 	font-family: "Montserrat", sans-serif;
 	margin-bottom: 0rem;
 }
@@ -506,6 +512,10 @@ p.resume_titles {
 	}
 	.page-description {
 		font-size: 1rem;
+	}
+	p.resume_titles {
+	color: #a4a4a4;
+	font-size: 1.3rem;
 	}
 }
 /*ABOUT ME*/
