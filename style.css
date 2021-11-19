@@ -322,6 +322,7 @@ ul.resume_bullets {
 .card-text {
 	font-family: "Alegreya", serif;
 	color: #a4a4a4;
+	padding-bottom: 110px;
 }
 .card-footer {
 	background: #6f6f6f10;
@@ -345,9 +346,14 @@ ul.resume_bullets {
 	font-weight: bold;
 	border-radius: 500px;
 	border: solid 2px #4ac918;
-	margin-bottom: 4rem;
 	padding: 0.475rem 1.5rem;
 }
+
+.project-btn {
+	position: absolute;
+	bottom: 75px;
+}
+
 .btn:hover {
 	background: #4ac918;
 	border: solid 2px #4ac918;
@@ -578,7 +584,7 @@ p.resume_titles {
 	}
 	.about-img {
 		position: relative;
-		height: 500px;
+		height: 420px;
 		background-image: url(./assets/aboutMe.jpg);
 		min-width: 300px;
 		background-size: cover;
